@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    border: 15px solid transparent; /* Border space */
+    border-image: linear-gradient(45deg, #f4c542, #d4af37, #ffcc00, #f4c542); /* Vibrant Gradient Border */
+    border-image-slice: 1;
+    box-shadow: 0px 0px 50px rgba(255, 215, 0, 0.9), 0px 0px 100px rgba(255, 215, 0, 0.6); /* Strong Glowing Shadow */
+    background-color: #1a1a1a;
+}
+
+h1 {
+    font-size: 3em;
+    color: #f4c542;
+    text-shadow: 0px 0px 20px rgba(255, 215, 0, 0.9); /* Glowing Text Effect */
+}
+h2, h3 {
+    color: #d4af37;
+    text-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); /* Glowing Text Effect */
+}
+p {
+    font-size: 1.2em;
+    width: 80%;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px rgba(255, 215, 0, 0.8); /* Glowing Hover Effect */
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
