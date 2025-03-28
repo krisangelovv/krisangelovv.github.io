@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+}
+
+
+h1 {
+    font-size: 3em;
+    color: #f4c542;
+    text-shadow: 0px 0px 20px rgba(255, 215, 0, 0.9); /* Glowing Text Effect */
+}
+h2, h3 {
+    color: #d4af37;
+    text-shadow: 0px 0px 15px rgba(255, 215, 0, 0.8); /* Glowing Text Effect */
+}
+p {
+    font-size: 1.2em;
+    width: 80%;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%; /* Ensure images resize based on the screen */
+    height: auto;
+}
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px rgba(255, 215, 0, 0.8); /* Glowing Hover Effect */
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; /* Reduce heading size for mobile */
+    }
+    h2, h3 {
+        font-size: 1.5em; /* Adjust subheading size */
+    }
+    p {
+        font-size: 1em; /* Reduce paragraph font size */
+        width: 90%; /* Make text container more fluid */
+    }
+    .container {
+        padding: 10px;
+    }
+    img {
+        width: 100%; /* Make images take up the full width of the container */
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Further mobile styling for very small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Further reduce heading size */
+    }
+    h2, h3 {
+        font-size: 1.3em; /* Further adjust subheading size */
+    }
+    p {
+        font-size: 0.9em; /* Adjust text size for readability */
+        width: 95%; /* Make text container more fluid */
+    }
+    img {
+        width: 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+}
